@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="../lib/css/emoji.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RandomForum</title>
+  </head>
+
+  <body class="bg-light">
+    <!-- logo -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top pb-0">
+      <div class="row w-100 flex-no-wrap">
+        <!-- nav left wing-->
+        <a href="../index.html" class="navbar-brand"
+          ><i class="fas fa-grin-beam  mx-2"></i>RandomBlog</a
+        >
+        <button
+          class="navbar-toggler ml-auto"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- menu -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a href="../index.html" class="nav-link">Main</a>
+            </li>
+            <li class="nav-item">
+              <a href="randomchat.html" class="nav-link active">RandomChat</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- nav right wing-->
+          <ul class="navbar-nav">
+            <div class="ml-auto d-none d-lg-block">
+              <!-- search input -->
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-search"></i
+                  ></span>
+                </div>
+
+                <input
+                  type="text"
+                  class="form-control search-input"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+
+            <!-- hot menu -->
+            <li
+              class="nav-item dropdown d-none d-sm-inline-block ml-md-3 mx-sm-1"
+            >
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-mug-hot"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="../index.html" class="dropdown-item">
+                  <i class="fas fa-fire"></i> Hot page
+                </a>
+                <a href="../index.html" class="dropdown-item">
+                  <i class="fas fa-chart-line"></i> All
+                </a>
+              </div>
+            </li>
+
+            <!-- msg menu -->
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle mx-sm-1"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-envelope"></i>
+                <span class="d-sm-none">Messeges</span>
+              </a>
+              <div class="dropdown-menu">
+                <a
+                  href="chat.html"
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addConversationModal"
+                >
+                  <i class="fas fa-comments"></i> Your conversations
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addMsgModal"
+                >
+                  <i class="fas fa-envelope-open-text"></i> Send message
+                </a>
+              </div>
+            </li>
+
+            <!-- user dropdown menu -->
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user mr-2"></i>Welcome
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-power-off"></i> Login / Log out
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- chat section -->
+    <section id="randomChat" class="pt-4 mx-2">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card py-4 px-2">
+            <div class="row">
+              <div class="col-2 ">
+                <img
+                  src="https://source.unsplash.com/random/200x200/?robot"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-10">
+                <span class="mr-2 h4">HeyMate12</span>
+                <small class="text-muted">Yesterday 10:34</small>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ullam totam accusantium, corporis molestias nulla nam nesciunt
+                  maxime sapiente expedita voluptatem quidem ipsum! Pariatur
+                  quia eos inventore modi cumque voluptas cum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card py-4 px-2">
+            <div class="row">
+              <div class="col-2 ">
+                <img
+                  src="https://source.unsplash.com/random/200x200/?girl"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-10">
+                <span class="mr-2 h4">Cassanra</span>
+                <small class="text-muted">Yesterday 10:36</small>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card py-4 px-2">
+            <div class="row">
+              <div class="col-2 ">
+                <img
+                  src="https://source.unsplash.com/random/200x200/?profile"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-10">
+                <span class="mr-2 h4">mati12345</span>
+                <small class="text-muted">Yesterday 10:39</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates maiores eum, nisi beatae eveniet natus sequi,
+                  voluptatum optio distinctio quas minima laborum iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card py-4 px-2">
+            <div class="row">
+              <div class="col-2 ">
+                <img
+                  src="https://source.unsplash.com/random/200x200/?animal"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-10">
+                <span class="mr-2 h4">DonMateo</span>
+                <small class="text-muted">Yesterday 10:51</small>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum necessitatibus deserunt praesentium in molestiae alias
+                  quos eum? Ratione quaerat laudantium aut officiis obcaecati
+                  molestiae non ipsum provident, dolore minus. Quia ex minima
+                  porro minus delectus quis dignissimos odit ad fugiat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card py-4 px-2">
+            <div class="row">
+              <div class="col-2 ">
+                <img
+                  src="https://source.unsplash.com/random/201x198/?fun"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-10">
+                <span class="mr-2 h4 text-warning">Admin</span>
+                <small class="text-muted">Yesterday 21:37</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates maiores eum, nisi beatae eveniet natus sequi,
+                  voluptatum optio distinctio quas minima laborum iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="input-group mt-3">
+            <input
+              type="text"
+              class="form-control justify-middle pt-2"
+              placeholder="Say something :)"
+              data-emojiable="true"
+            />
+          </div>
+        </div>
+
+        <!-- advertisment block-->
+        <div class="col-md-4 d-none d-md-block">
+          <div>
+            <small>ADVERTISEMENT</small> <br />
+            <img
+              src="https://source.unsplash.com/random/400x300/?Advertisment"
+              alt="Welcome in BrandName shop"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="card my-4 text-center">
+            <img
+              src="https://source.unsplash.com/random/400x80/?rainbow"
+              alt=""
+              class="img-fluid card-img-top "
+            />
+            <div class="card-header">
+              Welcome in <br />
+              <h2 class="h6">RandomBlog</h2>
+            </div>
+
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                voluptates reprehenderit eligendi dolorum earum laborum.
+              </p>
+              <button class="btn btn-primary w-100">Welcome</button>
+            </div>
+          </div>
+
+          <div>
+            <small>ADVERTISEMENT</small> <br />
+            <img
+              src="https://source.unsplash.com/random/431x299/?Advertisment"
+              alt="Welcome in BrandName shop"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="text-center p-2 bg-primary text-white mt-3">
+      <div class="row">
+        <div class="col"><p>Copyright &copy; RandomForum</p></div>
+      </div>
+    </footer>
+
+    <!-- modals-->
+
+    <!-- ADD POST MODAL -->
+    <div class="modal fade" id="addMsgModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Send Message</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Address</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="text">Text</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD CONVERSATION MODAL -->
+    <div class="modal fade" id="addConversationModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Your Conversations</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body text-center">
+                Sorry you don't have any messages :(
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Begin emoji-picker JavaScript -->
+    <script src="../lib/js/config.js"></script>
+    <script src="../lib/js/util.js"></script>
+    <script src="../lib/js/jquery.emojiarea.js"></script>
+    <script src="../lib/js/emoji-picker.js"></script>
+    <!-- End emoji-picker JavaScript -->
+    <script>
+      $(function() {
+        // Initializes and creates emoji set from sprite sheet
+        window.emojiPicker = new EmojiPicker({
+          emojiable_selector: "[data-emojiable=true]",
+          assetsPath: "../lib/img/",
+          popupButtonClasses: "fa fa-smile-o"
+        });
+        // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+        // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+        // It can be called as many times as necessary; previously converted input fields will not be converted again
+        window.emojiPicker.discover();
+      });
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
